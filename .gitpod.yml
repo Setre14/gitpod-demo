@@ -4,7 +4,12 @@
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
+image: eclipse-temurin:17-jre
+
 tasks:
   - init: ./mvnw install -DskipTests=false
 
 
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
