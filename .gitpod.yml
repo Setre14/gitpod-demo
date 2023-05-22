@@ -6,6 +6,9 @@
 
 # image: eclipse-temurin:17-jre
 
+image:
+ file: Dockerfile.gitpod
+
 tasks:
   - init: ./mvnw install -DskipTests=false
 
