@@ -13,6 +13,9 @@ tasks:
   - init: ./mvnw install -DskipTests=false
   - command: ./mvnw spring-boot:run
 
+github:
+  prebuilds:
+    pullRequests: false
 
 vscode:
   extensions:
