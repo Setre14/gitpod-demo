@@ -6,6 +6,9 @@
 
 # image: eclipse-temurin:17-jre
 
+image:
+ file: Dockerfile.gitpod
+
 tasks:
   - init: ./mvnw install -DskipTests=false
 
@@ -13,3 +16,11 @@ tasks:
 vscode:
   extensions:
     - vscjava.vscode-java-pack
+
+ports:
+  - name: Web App
+    description: The main application web server
+    port: 8080
+    onOpen: open-browser
+    visibility: private
+  
