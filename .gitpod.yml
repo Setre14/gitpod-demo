@@ -10,8 +10,9 @@ image:
  file: Dockerfile.gitpod
 
 tasks:
-  - init: ./mvnw install -DskipTests=false
-  - command: ./mvnw spring-boot:run
+  - name: Download dependencies and start server
+    init: ./mvnw install -DskipTests=false
+    command: ./mvnw spring-boot:run
 
 github:
   prebuilds:
