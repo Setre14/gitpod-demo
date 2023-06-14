@@ -34,6 +34,6 @@ RUN curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/s
 # Install k3s
 RUN apt install uidmap
 
-RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod \
- && usermod -a -G docker gitpod
+# RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod \#
+# && usermod -a -G docker gitpod
 USER gitpod
